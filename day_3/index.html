@@ -1,0 +1,99 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Practice arithmetic operators</title>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="This is a practice file for operators in JavaScript."
+    />
+    <meta name="keywords" content="JavaScript, Operators, Practice" />
+    <meta name="author" content="Shefaul Islam" />
+  </head>
+
+  <body>
+    <h1>Practice Arithmetic Operators</h1>
+
+    <script>
+      // Prompt the user to enter two numbers
+      let num1 = prompt("Enter the first number:");
+      let num2 = prompt("Enter the second number:");
+
+      // Convert the input strings to numbers
+      num1 = parseInt(num1);
+      num2 = parseInt(num2);
+
+      // Perform arithmetic operations and display the results
+      document.write(
+        "Summation of " +
+          num1 +
+          " and " +
+          num2 +
+          " is: " +
+          (num1 + num2) +
+          "<br>",
+      );
+      document.write(
+        "Subtraction of " +
+          num1 +
+          " and " +
+          num2 +
+          " is: " +
+          (num1 - num2) +
+          "<br>",
+      );
+      document.write(
+        "Multiplication of " +
+          num1 +
+          " and " +
+          num2 +
+          " is: " +
+          num1 * num2 +
+          "<br>",
+      );
+      document.write(
+        "Division of " + num1 + " and " + num2 + " is: " + num1 / num2 + "<br>",
+      );
+      document.write(
+        "Modulus of " +
+          num1 +
+          " and " +
+          num2 +
+          " is: " +
+          (num1 % num2) +
+          "<br>",
+      );
+
+      // Area calculation
+      let length = prompt("Enter the length of the rectangle:");
+      let width = prompt("Enter the width of the rectangle:");
+
+      // Convert the input strings to numbers
+      length = parseFloat(length);
+      width = parseFloat(width);
+
+      // Calculate and display the area
+      document.write("Area of the rectangle is: " + length * width + "<br>");
+
+      // Farenheit to Celsius conversion
+      let fahrenheit = prompt("Enter temperature in Fahrenheit:");
+      fahrenheit = parseFloat(fahrenheit);
+      let celsius = ((fahrenheit - 32) * 5) / 9;
+      document.write(
+        "Temperature in Celsius is: " + celsius.toFixed(2) + "<br>",
+      );
+
+      // Celsius to Farenheit conversion
+      let celsiusInput = prompt("Enter temperature in Celsius:");
+      celsiusInput = parseFloat(celsiusInput);
+      let fahrenheitConverted = (celsiusInput * 9) / 5 + 32;
+      document.write(
+        "Temperature in Fahrenheit is: " +
+          fahrenheitConverted.toFixed(2) +
+          "<br>",
+      );
+    </script>
+  </body>
+</html>

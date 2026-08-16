@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <head></head>
+        <title>Day 2 practice</title>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Day 2 practice">
+        <meta name="keywords" content="HTML, CSS, JavaScript">
+        <meta name="author" content="Shefaul Islam">
+
+    </head>
+    <body>
+
+        <script>
+
+            // string concatenation
+            document.write("Shefaul" + " Islam" + "Shefa <br>");
+
+            let name = "Shefaul ";
+            let surname = "Islam";
+            document.write("My name is: " + name + surname + "<br>");
+            let concatenatedString = name.concat(surname);
+            document.write("Concatenated string: " + concatenatedString + "<br>");
+
+            // string methods
+            let text = prompt("Enter your text: ");
+            document.write("Length of your text is: " + text.length + "<br>");
+            document.write("Uppercase: " + text.toUpperCase() + "<br>");
+            document.write("Lowercase: " + text.toLowerCase() + "<br>");
+            document.write("Index of 'a': " + text.indexOf("a") + "<br>");
+            document.write("Last index of 'a': " + text.lastIndexOf("a") + "<br>");
+            document.write("Slice: " + text.slice(0, 5) + "<br>");
+
+
+            let firstName = prompt("Enter your first name: ");
+            let lastName = prompt("Enter your last name: ");
+            let fullName = firstName + " " + lastName;
+            document.write("Your full name is: " + fullName + "<br>");
+            
+            let lengthOfFullName = fullName.length;
+            document.write("Length of your full name is: " + lengthOfFullName + "<br>");
+
+            let upperCaseFullName = fullName.toUpperCase();
+            document.write("Your full name in uppercase is: " + upperCaseFullName + "<br>");
+
+
+        </script>
+    </body>
+
+
+</html>

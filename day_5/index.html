@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Practice Day 5</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <script>
+      let num1 = prompt("Enter the value of num1: ");
+      let num2 = prompt("Enter the value of num2: ");
+      let num3 = prompt("Enter the value of num3: ");
+
+      let result =
+        num1 >= num2 && num1 >= num3
+          ? num1 + "is the largest number"
+          : num2 >= num1 && num2 >= num3
+            ? num2 + " is the largest number"
+            : num3 + " is the largest number";
+
+      document.write(result + "<br>");
+
+      let digit = prompt("Enter any digit: ");
+
+      switch (digit) {
+        case "0":
+          document.write("Zero");
+          break;
+        case "1":
+          document.write("One");
+          break;
+        case "2":
+          document.write("Two");
+          break;
+        case "3":
+          document.write("Three");
+          break;
+        case "4":
+          document.write("Four");
+          break;
+        case "5":
+          document.write("Five");
+          break;
+        case "6":
+          document.write("Six");
+          break;
+        case "7":
+          document.write("Seven");
+          break;
+        case "8":
+          document.write("Eight");
+          break;
+        case "9":
+          document.write("Nine");
+          break;
+        default:
+          document.write("It's not a digit");
+      }
+    </script>
+  </body>
+</html>
